@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+}
+.sideNav {
+    width: 20%;
+    height: 1200px;
+    padding-top: 15px;
+    background: #f2f2f2;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+.main {
+    width: 80%;
+}
+.heading {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #f2f2f2;
+}
+.title {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    color: rgb(3, 154, 214);
+    font-family: sans-serif;
+}
+.title h1 {
+    font-size: x-large;
+    padding-top: 35px;
+    font-weight: 700;
+}
+.title h2 {
+    font-size: large;
+    font-weight: 600;
+    margin-top: 10px;
+}
+#report {
+    margin-top: -1px;
+    background: rgb(105, 202, 240);
+    width: 250px;
+    height: 35px;
+    padding-top: 7.5px;
+    border-radius: 5px;
+    font-weight: lighter;
+    color: white;
+    margin: auto;
+}
+.siwes-logo {
+    position: absolute;
+    right: 0;
+    padding-top: 15px;
+}
+.main-content {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.main-content h1 {
+    color: grey;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: xx-large;
+}
+.main-content p {
+    border: 1px solid rgb(224, 221, 221);
+    box-shadow: 0px 8px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    background: white;
+    height: 35px;
+    width: 250px;
+    margin-bottom: 10px;
+    color: grey;
+    padding-top: 7.5px;
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+.main-content ul {
+    border: 1px solid rgb(224, 221, 221);
+    list-style-type: none;
+    height: 200px;
+    box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.1);
+}
+ul li {
+    position: relative;
+    padding: 14px 10px;
+    font-family: sans-serif;
+}
+li a {
+    text-decoration: none;
+    color: black;
+}
+li a:hover {
+    color: rgb(3, 154, 214);
+}
+ul li:hover {
+    background: #f2f2f2;
+    border-bottom: 1px solid rgb(224, 221, 221);
+}
+#month {
+    position: absolute;
+    right: 10px;
+    background: rgb(85, 84, 84);
+    width: 80px;
+    text-align: center;
+    height: 30px;
+    border-radius: 50px;
+    padding-top: 5px;
+    color: white;
+}
+#myTable {
+    display: none;
+}
+table {
+    width: 100%;
+    height: 100%;
+}
+table, th, td  {
+    margin-top: 55px;
+    font-family: sans-serif;
+    border: 2px solid rgb(224, 221, 221);
+    border-collapse: collapse;
+}
+table th {
+    background: rgb(4, 131, 182);
+    padding: 35px;
+    color: white;
+}
+.IT-Reports {
+    padding: 7px;
+}
+table tr:nth-child(odd) {
+    background: #f2f2f2;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .sideNav {
+        width: 100%;
+        height: 100%;
+    }
+    img {
+        width: 50px;
+        height: 50px;
+    }
+    .main {
+        width: 100%;
+    }
+    .heading {
+        height: 165px;
+    }
+    .title {
+        width: 70%;
+        margin: -85px auto 0 auto;
+    }
+    .title h1 {
+        font-size: large;
+        padding-top: 35px;
+        font-weight: 700;
+    }
+    .title h2 {
+        font-size: large;
+        font-weight: 500;
+    }
+    #report {
+        width: 210px;
+    }
+    .siwes-logo {
+        margin-top: -70px;
+    }
+}
+@media screen and (width: 411px) {
+    .heading {
+        height: 125px;
+    }
+}
+@media screen and (width: 414px) {
+    .heading {
+        height: 128px;
+    }
+}
+@media screen and (width: 375px) {
+    .heading {
+        height: 166px;
+    }
+}
+@media screen and (width: 400px) {
+    .heading {
+        height: 147px;
+    }
+}
+@media screen and (width: 768px) {
+    .heading {
+        height: 220px;
+    }
+    .title {
+        width: 80%;
+        margin: -15px auto 0 0px;
+    }
+    .title h1 {
+        font-size: 30px;
+    }
+    .title h2 {
+        font-size: 22px;
+    }
+    #report {
+        width: 310px;
+    }
+}
+@media screen and (width: 1024px) {
+    .heading {
+        height: 220px;
+    }
+    .title {
+        width: 80%;
+        margin: -15px auto 0 0px;
+    }
+    .title h1 {
+        font-size: 30px;
+    }
+    .title h2 {
+        font-size: 22px;
+    }
+    #report {
+        width: 310px;
+    }
+}
+@media screen and (width: 540px) {
+    .heading {
+        height: 105px;
+    }
+}
+@media screen and (width: 280px) {
+    .heading {
+        height: 129px;
+    }
+    .title h1 {
+        font-size: 15px;
+    }
+    .title h2 {
+        font-size: 14.5px;
+    }
+    #report {
+        width: 200px;
+    }
+}
+@media screen and (width: 280px) {
+    .heading {
+        height: 129px;
+    }
+    .title h1 {
+        font-size: 15px;
+    }
+    .title h2 {
+        font-size: 14.5px;
+    }
+    #report {
+        width: 200px;
+    }
+}
+@media screen and (width: 820px) {
+    .heading {
+        height: 220px;
+    }
+    .title {
+        width: 80%;
+        margin: -15px auto 0 0px;
+    }
+    .title h1 {
+        font-size: 30px;
+    }
+    .title h2 {
+        font-size: 22px;
+    }
+    #report {
+        width: 310px;
+    }
+}
+@media screen and (width: 912px) {
+    .heading {
+        height: 220px;
+    }
+    .title {
+        width: 80%;
+        margin: -15px auto 0 0px;
+    }
+    .title h1 {
+        font-size: 30px;
+    }
+    .title h2 {
+        font-size: 22px;
+    }
+    #report {
+        width: 310px;
+    }
+}
